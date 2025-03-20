@@ -6,12 +6,11 @@
 /*   By: amsbai <amsbai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 22:38:14 by amsbai            #+#    #+#             */
-/*   Updated: 2024/11/17 22:30:40 by amsbai           ###   ########.fr       */
+/*   Updated: 2025/03/17 20:53:55 by amsbai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
-#include <stdio.h>
 //NULL === strinnewlinep ===> strinnewlinep
 static char	*extract_line(char *str)
 {

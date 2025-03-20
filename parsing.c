@@ -6,7 +6,7 @@
 /*   By: amsbai <amsbai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 14:10:37 by amsbai            #+#    #+#             */
-/*   Updated: 2025/03/12 23:46:18 by amsbai           ###   ########.fr       */
+/*   Updated: 2025/03/17 20:37:17 by amsbai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	if_walls(char **arr, int size)
 		len = ft_strlen(arr[i]);
 		if (i == 0 && (all_1(arr[i]) == false))
 			error_message(arr, 1);
-		else if (i == (size - 1) && (all_1(arr[i]) == false))
+		else if (i == (size - 2) && (all_1(arr[i]) == false))
 			error_message(arr, 1);
 		else
 		{
@@ -94,6 +94,7 @@ char	**parsing(int fd, t_maps_chars *game)
 		arr = ft_realloc(arr, (size * sizeof(char *)));
 		i++;
 	}
+	max_window(len, i, arr);
 	arr[size] = NULL;
 	game->map_height = size - 1;
 	check_error(arr, size, game);

@@ -6,7 +6,7 @@
 /*   By: amsbai <amsbai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 21:18:06 by amsbai            #+#    #+#             */
-/*   Updated: 2025/03/12 23:46:55 by amsbai           ###   ########.fr       */
+/*   Updated: 2025/03/14 17:57:15 by amsbai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,10 @@ bool	rectangle_checker(char **arr)
 		i++;
 	}
 	return (true);
+}
+
+void	max_window(int width, int length, char **map)
+{
+	if (width > 40 || length > 22)
+		error_message(map, 1);
 }

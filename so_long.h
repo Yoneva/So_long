@@ -6,7 +6,7 @@
 /*   By: amsbai <amsbai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/01 10:49:19 by amsbai            #+#    #+#             */
-/*   Updated: 2025/03/12 23:31:53 by amsbai           ###   ########.fr       */
+/*   Updated: 2025/03/20 16:56:00 by amsbai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ typedef struct a_map_chars {
 }	t_maps_chars;
 
 int			main(int ac, char **av);
+void		ft_putnbr(int nbr);
 void		eaten_collectibles(t_maps_chars *game);
 char		**parsing(int fd, t_maps_chars *game);
 mlx_image_t	*texturize(char *path, mlx_t *mlx);
@@ -53,6 +54,7 @@ void		flood_fill(char **map, t_maps_chars side);
 bool		find_player(char **map, t_maps_chars *player);
 char		**copy_arr(char **arr);
 bool		rectangle_checker(char **arr);
+void		max_window(int width, int length, char **map);
 bool		all_1(char *line);
 void		error_message(char **arr, int n);
 void		valid_map(char **map, t_maps_chars *side);
